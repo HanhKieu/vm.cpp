@@ -52,7 +52,7 @@ void printRamUse(unsigned int ram[], unsigned int use[], int lineCounter)
 	}
 	
 	std::cout << use[3];
-	std::cout << " line: " << lineCounter << std::endl;
+	std::cout << std::dec << " line: " << lineCounter << std::endl;
 	
 }
 
@@ -133,6 +133,9 @@ int main(){
 								fullUse = 1;
 
 							}
+						}
+						if(useIndex == 3 && !fullUseChecker(use)){
+							useIndex = 0;
 						}
 						
 					}//for 
