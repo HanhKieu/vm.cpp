@@ -5,7 +5,30 @@
 
 
 
-void printRam(unsigned int ram[])
+// void printRam(ram,use);printRam(unsigned int ram[])
+// {
+// 	for(int i = 0; i < 3; i++){	
+// 		if(ram[i] != 0)
+// 			std::cout << std::hex << ram[i]<< "000" << " ";
+// 	}
+// 	if(ram[3] != 0)
+// 		std::cout << std::hex << ram[3] << "000";
+// 	std::cout << std::endl;
+
+// }
+int fullUseChecker(unsigned int use[]){
+	int full = 1;
+	for(int i = 0;i < 4; i++){
+		if(use[i] == 0){	
+			full = 0;
+			break;
+		}
+
+	}
+	return full;
+}
+
+void printRamUse(unsigned int ram[], unsigned int use[])
 {
 	for(int i = 0; i < 3; i++){	
 		if(ram[i] != 0)
@@ -14,8 +37,15 @@ void printRam(unsigned int ram[])
 	if(ram[3] != 0)
 		std::cout << std::hex << ram[3] << "000";
 	std::cout << std::endl;
-
+	for(int i = 0; i < 3; i++){	
+			std::cout << use [i] << " ";
+	}
+	
+	std::cout << use[3];
+	std::cout << std::endl;
+	
 }
+
 
 int main(){
 
@@ -58,7 +88,8 @@ int main(){
 						ram[i] = nutsack;
 						full = 0;
 						use[i] = 1;
-						printRam(ram);
+						fullUseChecker(use);
+						//printRamUse(ram,use);printRam(ram);
 						break;
 					}
 					full = 1;
@@ -79,13 +110,15 @@ int main(){
 								use[i] = 1;
 								fullUse = 0;
 								useIndex = i;
-								printRam(ram);
 								ram[i] = nutsack;
+								//printRamUse(ram,use);
+								//printRam(ram);
 								break;
 							}
 							else if(use[i] == 1){
 								use[i] = 0;
 								fullUse = 1;
+
 							}
 						}
 						
@@ -95,16 +128,19 @@ int main(){
 					useIndex = 0;
 					for(int i = 0;i < 4; i++)
 						use[i] = 0;
-					printRam(ram);
 					use[0] = 1;
 					ram[0] = nutsack;
+					fullUse = 0;
+					//printRamUse(ram,use);
+					//printRam(ram);
 
  
 
 				}
 
 			}//start implementing clock replacement when everything is full
-
+		printRamUse(ram,use);
+		//printRam(ram);
 		}//if counter
 		counter++;
 	}//while
