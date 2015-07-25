@@ -89,14 +89,14 @@ int main(){
 						full = 0;
 						use[i] = 1;
 						fullUseChecker(use);
+						if(fullUseChecker)
+							full == 1;
 						//printRamUse(ram,use);printRam(ram);
 						break;
 					}
 					full = 1;
 				}
 			}//if its not full find a place to put it
-
-
 
 
 
