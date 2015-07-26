@@ -20,10 +20,10 @@
 int ifInRam(unsigned int ram[], unsigned int nutsack){
 	for(int i = 0; i < 4; i++){	
 		if(ram[i] == nutsack)
-			return 1;
+			return i;
 	}
 
-	return 0;
+	return -1;
 
 }
 int fullUseChecker(unsigned int use[]){
@@ -127,7 +127,7 @@ int main(){
 
 				for(int i = useIndex; i < 4; i++){
 
-					if(!ifInRam(ram,nutsack)){
+					if(ifInRam(ram,nutsack) == -1){
 						if(use[i] == 0){
 							std::cout << "Use at current: 0";
 							std::cout << std::endl;
@@ -175,6 +175,10 @@ int main(){
 							
 						}
 					}
+					else{
+						use[ifInRam(ram,nutsack)] = 1;
+					}
+
 					if(useIndex == 3 && !fullUseChecker(use)){
 						std::cout << " I looped";
 						std::cout << std::endl;

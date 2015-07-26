@@ -29,26 +29,26 @@ Use at current: 0
 ad08a000 7464a000 7be1b000 cb6b5000
 1 0 0 0 line: 12 Index is : 1 was Trying to add: ad08a
 ad08a000 7464a000 7be1b000 cb6b5000
-1 0 0 0 line: 13 Index is : 1 was Trying to add: 7be1b
+1 0 1 0 line: 13 Index is : 1 was Trying to add: 7be1b
 Use at current: 0
 ad08a000 e1ad6000 7be1b000 cb6b5000
-1 1 0 0 line: 14 Index is : 2 was Trying to add: e1ad6
+1 1 1 0 line: 14 Index is : 2 was Trying to add: e1ad6
+Use at current: 1
 Use at current: 0
-ad08a000 e1ad6000 71919000 cb6b5000
-1 1 1 0 line: 15 Index is : 3 was Trying to add: 71919
+ad08a000 e1ad6000 7be1b000 71919000
+1 1 0 1 line: 15 Index is : 0 was Trying to add: 71919
+ad08a000 e1ad6000 7be1b000 71919000
+1 1 0 1 line: 16 Index is : 0 was Trying to add: 71919
+Use at current: 1
+Use at current: 1
+Use at current: 0
+ad08a000 e1ad6000 14be9000 71919000
+0 0 1 1 line: 17 Index is : 3 was Trying to add: 14be9
  I looped
-ad08a000 e1ad6000 71919000 cb6b5000
-1 1 1 0 line: 16 Index is : 4294967295 was Trying to add: 71919
-Use at current: 1
-Use at current: 1
-Use at current: 1
+ad08a000 e1ad6000 14be9000 71919000
+0 1 1 1 line: 18 Index is : 4294967295 was Trying to add: e1ad6
+ad08a000 e1ad6000 14be9000 71919000
+0 1 1 1 line: 19 Index is : 4294967295 was Trying to add: 14be9
 Use at current: 0
-ad08a000 e1ad6000 71919000 14be9000
-0 0 0 1 line: 17 Index is : 0 was Trying to add: 14be9
-ad08a000 e1ad6000 71919000 14be9000
-0 0 0 1 line: 18 Index is : 0 was Trying to add: e1ad6
-ad08a000 e1ad6000 71919000 14be9000
-0 0 0 1 line: 19 Index is : 0 was Trying to add: 14be9
-Use at current: 0
-a0fcf000 e1ad6000 71919000 14be9000
-1 0 0 1 line: 20 Index is : 1 was Trying to add: a0fcf
+a0fcf000 e1ad6000 14be9000 71919000
+1 1 1 1 line: 20 Index is : 1 was Trying to add: a0fcf
