@@ -53,7 +53,7 @@ void printRamUse(unsigned int ram[], unsigned int use[], int lineCounter, unsign
 	
 	std::cout << use[3];
 	std::cout << std::dec << " line: " << lineCounter << " Index is : " << useIndex ;
-	std::cout << std::hex << " Trying to add: " << nutsack << std::endl;
+	std::cout << std::hex << " was Trying to add: " << nutsack << std::endl;
 	
 }
 
@@ -156,9 +156,23 @@ int main(){
 						}
 						else if(use[i] == 1)
 						{
-							use[i] = 0;
-							std::cout << "Use at current: 1";
+							if(fullUseChecker(use))
+							{
+								useIndex = 0;
+								i = -1;
+								for(int j = 0;j < 4; j++)
+									use[j] = 0;
+								std::cout << "went into fulluse checker for 1";
+								std::cout << std::endl;
+
+							}
+							else{
+								use[i] = 0; 
+								std::cout << "Use at current: 1";
 							std::cout << std::endl;
+
+							}
+							
 						}
 					}
 					if(useIndex == 3 && !fullUseChecker(use)){
