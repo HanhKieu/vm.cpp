@@ -2,7 +2,7 @@
 #include <string>
 #include <bitset>
 #include <fstream>
-
+//banana
 
 
 // void printRam(ram,use);printRam(unsigned int ram[])
@@ -21,6 +21,7 @@ int ifInRam(unsigned int ram[], unsigned int nutsack){
 		if(ram[i] == nutsack)
 			return i;
 	}
+
 
 	return -1;
 
