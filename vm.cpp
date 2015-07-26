@@ -99,15 +99,25 @@ int main(){
 					if(ram[i] == 0){
 						ram[i] = nutsack;
 						full = 0;
-						use[i] = 1;
 						if(fullUseChecker(ram))
 						{
 							full = 1;
+							useIndex = 0;
+							use[i] = 1;
+							
+							break;
 						}
+						use[i] = 1;
 						//printRamUse(ram,use,lineCounter));printRam(ram);
 						break;
 					}
 					full = 1;
+				}
+				printRamUse(ram,use,lineCounter, useIndex, nutsack);
+				if(full == 1){
+					for(int j = 0;j < 4; j++)
+						use[j] = 0;
+
 				}
 			}//if its not full find a place to put it
 
@@ -119,6 +129,17 @@ int main(){
 
 					if(!ifInRam(ram,nutsack)){
 						if(use[i] == 0){
+							std::cout << "Use at current: 0";
+							std::cout << std::endl;
+							if(fullUseChecker(use))
+							{
+								useIndex = 0;
+								for(int j = 0;j < 4; j++)
+									use[j] = 0;
+								std::cout << "went into fulluse checker";
+								std::cout << std::endl;
+								break;
+							}
 							use[i] = 1;
 							if(i == 3){
 								useIndex = 0;
@@ -126,12 +147,7 @@ int main(){
 							else{
 								useIndex = i + 1;
 							}
-							if(fullUseChecker(use))
-							{
-								useIndex = 0;
-								for(int j = 0;j < 4; j++)
-									use[i] = 0;
-							}
+							
 							ram[i] = nutsack;
 						
 							//printRamUse(ram,use,lineCounter));
@@ -139,9 +155,15 @@ int main(){
 							break;
 						}
 						else if(use[i] == 1)
+						{
 							use[i] = 0;
+							std::cout << "Use at current: 1";
+							std::cout << std::endl;
+						}
 					}
 					if(useIndex == 3 && !fullUseChecker(use)){
+						std::cout << " I looped";
+						std::cout << std::endl;
 						useIndex = -1;
 					}
 
@@ -154,10 +176,10 @@ int main(){
 					//printRam(ram);
 
  
-
+				printRamUse(ram,use,lineCounter, useIndex, nutsack);
 
 			}//start implementing clock replacement when everything is full
-		printRamUse(ram,use,lineCounter, useIndex, nutsack);
+	
 		//printRam(ram);
 		lineCounter++;
 		}//if counter

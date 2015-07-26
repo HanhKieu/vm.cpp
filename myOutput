@@ -6,35 +6,51 @@
 1 1 1 0 line: 3 Index is : 0 Trying to add: cb6b5
 561f9000 14be9000 cb6b5000 ad08a000
 1 1 1 1 line: 4 Index is : 0 Trying to add: ad08a
-561f9000 14be9000 cb6b5000 ad08a000
-0 0 0 0 line: 5 Index is : 0 Trying to add: 29fbb
-7464a000 14be9000 cb6b5000 ad08a000
-1 0 0 0 line: 6 Index is : 1 Trying to add: 7464a
-7464a000 29fbb000 cb6b5000 ad08a000
+Use at current: 0
+29fbb000 14be9000 cb6b5000 ad08a000
+1 0 0 0 line: 5 Index is : 1 Trying to add: 29fbb
+Use at current: 0
+29fbb000 7464a000 cb6b5000 ad08a000
+1 1 0 0 line: 6 Index is : 2 Trying to add: 7464a
+29fbb000 7464a000 cb6b5000 ad08a000
 1 1 0 0 line: 7 Index is : 2 Trying to add: 29fbb
-7464a000 29fbb000 7be1b000 ad08a000
+Use at current: 0
+29fbb000 7464a000 7be1b000 ad08a000
 1 1 1 0 line: 8 Index is : 3 Trying to add: 7be1b
-7464a000 29fbb000 7be1b000 cb6b5000
-1 1 1 0 line: 9 Index is : 0 Trying to add: cb6b5
-7464a000 29fbb000 7be1b000 cb6b5000
-1 1 1 0 line: 10 Index is : 0 Trying to add: 29fbb
-7464a000 29fbb000 7be1b000 cb6b5000
-1 1 1 0 line: 11 Index is : 0 Trying to add: 29fbb
-7464a000 29fbb000 7be1b000 ad08a000
-0 0 0 1 line: 12 Index is : 0 Trying to add: ad08a
-7464a000 29fbb000 7be1b000 ad08a000
-0 0 0 1 line: 13 Index is : 0 Trying to add: 7be1b
-e1ad6000 29fbb000 7be1b000 ad08a000
-1 0 0 1 line: 14 Index is : 1 Trying to add: e1ad6
-e1ad6000 71919000 7be1b000 ad08a000
-1 1 0 1 line: 15 Index is : 2 Trying to add: 71919
-e1ad6000 71919000 7be1b000 ad08a000
-1 1 0 1 line: 16 Index is : 2 Trying to add: 71919
-e1ad6000 71919000 14be9000 ad08a000
-1 1 0 1 line: 17 Index is : 0 Trying to add: 14be9
-e1ad6000 71919000 14be9000 ad08a000
-1 1 0 1 line: 18 Index is : 0 Trying to add: e1ad6
-e1ad6000 71919000 14be9000 ad08a000
-1 1 0 1 line: 19 Index is : 0 Trying to add: 14be9
-e1ad6000 71919000 a0fcf000 ad08a000
-0 0 1 1 line: 20 Index is : 3 Trying to add: a0fcf
+Use at current: 0
+29fbb000 7464a000 7be1b000 cb6b5000
+1 1 1 1 line: 9 Index is : 0 Trying to add: cb6b5
+29fbb000 7464a000 7be1b000 cb6b5000
+1 1 1 1 line: 10 Index is : 0 Trying to add: 29fbb
+29fbb000 7464a000 7be1b000 cb6b5000
+1 1 1 1 line: 11 Index is : 0 Trying to add: 29fbb
+Use at current: 1
+Use at current: 1
+Use at current: 1
+Use at current: 1
+29fbb000 7464a000 7be1b000 cb6b5000
+0 0 0 0 line: 12 Index is : 0 Trying to add: ad08a
+29fbb000 7464a000 7be1b000 cb6b5000
+0 0 0 0 line: 13 Index is : 0 Trying to add: 7be1b
+Use at current: 0
+e1ad6000 7464a000 7be1b000 cb6b5000
+1 0 0 0 line: 14 Index is : 1 Trying to add: e1ad6
+Use at current: 0
+e1ad6000 71919000 7be1b000 cb6b5000
+1 1 0 0 line: 15 Index is : 2 Trying to add: 71919
+e1ad6000 71919000 7be1b000 cb6b5000
+1 1 0 0 line: 16 Index is : 2 Trying to add: 71919
+Use at current: 0
+e1ad6000 71919000 14be9000 cb6b5000
+1 1 1 0 line: 17 Index is : 3 Trying to add: 14be9
+ I looped
+e1ad6000 71919000 14be9000 cb6b5000
+1 1 1 0 line: 18 Index is : 4294967295 Trying to add: e1ad6
+e1ad6000 71919000 14be9000 cb6b5000
+1 1 1 0 line: 19 Index is : 4294967295 Trying to add: 14be9
+Use at current: 1
+Use at current: 1
+Use at current: 1
+Use at current: 0
+e1ad6000 71919000 14be9000 a0fcf000
+0 0 0 1 line: 20 Index is : 0 Trying to add: a0fcf
