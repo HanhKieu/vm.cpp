@@ -12,11 +12,10 @@
 // 			std::cout << std::hex << ram[i]<< "000" << " ";
 // 	}
 // 	if(ram[3] != 0)
-// 		std::cout << std::hex << ram[3] << "000";
+// 		std::cout << std::hex << ram[3] << "000";s
 // 	std::cout << std::endl;
 
 // }
-
 int ifInRam(unsigned int ram[], unsigned int nutsack){
 	for(int i = 0; i < 4; i++){	
 		if(ram[i] == nutsack)
@@ -25,7 +24,9 @@ int ifInRam(unsigned int ram[], unsigned int nutsack){
 
 	return -1;
 
-}
+
+
+}//yoooo
 int fullUseChecker(unsigned int use[]){
 	int full = 1;
 	for(int i = 0;i < 4; i++){
