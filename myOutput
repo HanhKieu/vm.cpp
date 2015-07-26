@@ -1,40 +1,40 @@
 561f9000 
-1 0 0 0 line: 1
+1 0 0 0 line: 1 Index is : 0 Trying to add: 561f9
 561f9000 14be9000 
-1 1 0 0 line: 2
+1 1 0 0 line: 2 Index is : 0 Trying to add: 14be9
 561f9000 14be9000 cb6b5000 
-1 1 1 0 line: 3
+1 1 1 0 line: 3 Index is : 0 Trying to add: cb6b5
 561f9000 14be9000 cb6b5000 ad08a000
-1 1 1 1 line: 4
-29fbb000 14be9000 cb6b5000 ad08a000
-1 0 0 0 line: 5
-29fbb000 7464a000 cb6b5000 ad08a000
-1 1 0 0 line: 6
-29fbb000 7464a000 cb6b5000 ad08a000
-1 1 0 0 line: 7
-29fbb000 7464a000 7be1b000 ad08a000
-1 1 1 0 line: 8
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 9
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 10
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 11
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 12
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 13
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 14
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 15
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 16
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 17
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 18
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 19
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 20
+1 1 1 1 line: 4 Index is : 0 Trying to add: ad08a
+561f9000 14be9000 cb6b5000 ad08a000
+0 0 0 0 line: 5 Index is : 0 Trying to add: 29fbb
+7464a000 14be9000 cb6b5000 ad08a000
+1 0 0 0 line: 6 Index is : 1 Trying to add: 7464a
+7464a000 29fbb000 cb6b5000 ad08a000
+1 1 0 0 line: 7 Index is : 2 Trying to add: 29fbb
+7464a000 29fbb000 7be1b000 ad08a000
+1 1 1 0 line: 8 Index is : 3 Trying to add: 7be1b
+7464a000 29fbb000 7be1b000 cb6b5000
+1 1 1 0 line: 9 Index is : 0 Trying to add: cb6b5
+7464a000 29fbb000 7be1b000 cb6b5000
+1 1 1 0 line: 10 Index is : 0 Trying to add: 29fbb
+7464a000 29fbb000 7be1b000 cb6b5000
+1 1 1 0 line: 11 Index is : 0 Trying to add: 29fbb
+7464a000 29fbb000 7be1b000 ad08a000
+0 0 0 1 line: 12 Index is : 0 Trying to add: ad08a
+7464a000 29fbb000 7be1b000 ad08a000
+0 0 0 1 line: 13 Index is : 0 Trying to add: 7be1b
+e1ad6000 29fbb000 7be1b000 ad08a000
+1 0 0 1 line: 14 Index is : 1 Trying to add: e1ad6
+e1ad6000 71919000 7be1b000 ad08a000
+1 1 0 1 line: 15 Index is : 2 Trying to add: 71919
+e1ad6000 71919000 7be1b000 ad08a000
+1 1 0 1 line: 16 Index is : 2 Trying to add: 71919
+e1ad6000 71919000 14be9000 ad08a000
+1 1 0 1 line: 17 Index is : 0 Trying to add: 14be9
+e1ad6000 71919000 14be9000 ad08a000
+1 1 0 1 line: 18 Index is : 0 Trying to add: e1ad6
+e1ad6000 71919000 14be9000 ad08a000
+1 1 0 1 line: 19 Index is : 0 Trying to add: 14be9
+e1ad6000 71919000 a0fcf000 ad08a000
+0 0 1 1 line: 20 Index is : 3 Trying to add: a0fcf

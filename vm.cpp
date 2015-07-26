@@ -38,7 +38,7 @@ int fullUseChecker(unsigned int use[]){
 	return full;
 }
 
-void printRamUse(unsigned int ram[], unsigned int use[], int lineCounter)
+void printRamUse(unsigned int ram[], unsigned int use[], int lineCounter, unsigned int useIndex, unsigned int nutsack)
 {
 	for(int i = 0; i < 3; i++){	
 		if(ram[i] != 0)
@@ -52,7 +52,8 @@ void printRamUse(unsigned int ram[], unsigned int use[], int lineCounter)
 	}
 	
 	std::cout << use[3];
-	std::cout << std::dec << " line: " << lineCounter << std::endl;
+	std::cout << std::dec << " line: " << lineCounter << " Index is : " << useIndex ;
+	std::cout << std::hex << " Trying to add: " << nutsack << std::endl;
 	
 }
 
@@ -78,7 +79,7 @@ int main(){
 
 	std::ifstream fs;
 	fs.open("test20.txt");
-	unsigned int info, nutsack, full = 0, fullUse = 0, useIndex = 0;
+	unsigned int info, nutsack, full = 0, useIndex = 0;
 	int counter = 0;
 	int lineCounter = 1;
 
@@ -99,10 +100,9 @@ int main(){
 						ram[i] = nutsack;
 						full = 0;
 						use[i] = 1;
-						if(fullUseChecker(use))
+						if(fullUseChecker(ram))
 						{
 							full = 1;
-							fullUse = 1;
 						}
 						//printRamUse(ram,use,lineCounter));printRam(ram);
 						break;
@@ -115,40 +115,41 @@ int main(){
 
 			else if(full == 1){
 
+				for(int i = useIndex; i < 4; i++){
 
-				if(fullUse == 0){
-					for(int i = useIndex; i < 4; i++){
-						if(!ifInRam(ram,nutsack)){
-							if(use[i] == 0){
-								use[i] = 1;
-								fullUse = 0;
-								useIndex = i;
-								ram[i] = nutsack;
-								//printRamUse(ram,use,lineCounter));
-								//printRam(ram);
-								break;
+					if(!ifInRam(ram,nutsack)){
+						if(use[i] == 0){
+							use[i] = 1;
+							if(i == 3){
+								useIndex = 0;
 							}
-							else if(use[i] == 1){
-								use[i] = 0;
-								fullUse = 1;
-
+							else{
+								useIndex = i + 1;
 							}
-						}
-						if(useIndex == 3 && !fullUseChecker(use)){
-							useIndex = 0;
-						}
+							if(fullUseChecker(use))
+							{
+								useIndex = 0;
+								for(int j = 0;j < 4; j++)
+									use[i] = 0;
+							}
+							ram[i] = nutsack;
 						
-					}//for 
-				}
-				else if(fullUse == 1){
-
-						useIndex = 0;
-						for(int i = 0;i < 4; i++)
+							//printRamUse(ram,use,lineCounter));
+							//printRam(ram);
+							break;
+						}
+						else if(use[i] == 1)
 							use[i] = 0;
-						use[0] = 1;
-						ram[0] = nutsack;
-						fullUse = 0;
 					}
+					if(useIndex == 3 && !fullUseChecker(use)){
+						useIndex = -1;
+					}
+
+				}//for 
+		
+
+						
+				
 					//printRamUse(ram,use,lineCounter));
 					//printRam(ram);
 
@@ -156,7 +157,7 @@ int main(){
 
 
 			}//start implementing clock replacement when everything is full
-		printRamUse(ram,use,lineCounter);
+		printRamUse(ram,use,lineCounter, useIndex, nutsack);
 		//printRam(ram);
 		lineCounter++;
 		}//if counter
