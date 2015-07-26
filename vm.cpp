@@ -19,7 +19,7 @@
 int ifInRam(unsigned int ram[], unsigned int nutsack){
 	for(int i = 0; i < 4; i++){	
 		if(ram[i] == nutsack)
-			return i;
+			return nutsack;
 	}
 
 
