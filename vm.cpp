@@ -80,7 +80,7 @@ int main(){
 	/*page write and read*/
 
 	std::ifstream fs;
-	fs.open("test20.txt");
+	fs.open("test100.txt");
 	unsigned int info, nutsack, full = 0, useIndex = 0;
 	int counter = 0;
 	int lineCounter = 1;
@@ -171,6 +171,7 @@ int main(){
 							else{
 								use[i] = 0; 
 								std::cout << "Use at current: 1";
+
 							std::cout << std::endl;
 
 							}
