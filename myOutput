@@ -1,54 +1,20 @@
-561f9000 
-1 0 0 0 line: 1 Index is : 0 was Trying to add: 561f9
-561f9000 14be9000 
-1 1 0 0 line: 2 Index is : 0 was Trying to add: 14be9
-561f9000 14be9000 cb6b5000 
-1 1 1 0 line: 3 Index is : 0 was Trying to add: cb6b5
-561f9000 14be9000 cb6b5000 ad08a000
-1 1 1 1 line: 4 Index is : 0 was Trying to add: ad08a
-Use at current: 0
-29fbb000 14be9000 cb6b5000 ad08a000
-1 0 0 0 line: 5 Index is : 1 was Trying to add: 29fbb
-Use at current: 0
-29fbb000 7464a000 cb6b5000 ad08a000
-1 1 0 0 line: 6 Index is : 2 was Trying to add: 7464a
-29fbb000 7464a000 cb6b5000 ad08a000
-1 1 0 0 line: 7 Index is : 2 was Trying to add: 29fbb
-Use at current: 0
-29fbb000 7464a000 7be1b000 ad08a000
-1 1 1 0 line: 8 Index is : 3 was Trying to add: 7be1b
-Use at current: 0
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 9 Index is : 0 was Trying to add: cb6b5
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 10 Index is : 0 was Trying to add: 29fbb
-29fbb000 7464a000 7be1b000 cb6b5000
-1 1 1 1 line: 11 Index is : 0 was Trying to add: 29fbb
-went into fulluse checker for 1
-Use at current: 0
-ad08a000 7464a000 7be1b000 cb6b5000
-1 0 0 0 line: 12 Index is : 1 was Trying to add: ad08a
-ad08a000 7464a000 7be1b000 cb6b5000
-1 0 1 0 line: 13 Index is : 1 was Trying to add: 7be1b
-Use at current: 0
-ad08a000 e1ad6000 7be1b000 cb6b5000
-1 1 1 0 line: 14 Index is : 2 was Trying to add: e1ad6
-Use at current: 1
-Use at current: 0
-ad08a000 e1ad6000 7be1b000 71919000
-1 1 0 1 line: 15 Index is : 0 was Trying to add: 71919
-ad08a000 e1ad6000 7be1b000 71919000
-1 1 0 1 line: 16 Index is : 0 was Trying to add: 71919
-Use at current: 1
-Use at current: 1
-Use at current: 0
-ad08a000 e1ad6000 14be9000 71919000
-0 0 1 1 line: 17 Index is : 3 was Trying to add: 14be9
- I looped
-ad08a000 e1ad6000 14be9000 71919000
-0 1 1 1 line: 18 Index is : 4294967295 was Trying to add: e1ad6
-ad08a000 e1ad6000 14be9000 71919000
-0 1 1 1 line: 19 Index is : 4294967295 was Trying to add: 14be9
-Use at current: 0
-a0fcf000 e1ad6000 14be9000 71919000
-1 1 1 1 line: 20 Index is : 1 was Trying to add: a0fcf
+561f9000
+561f9000 14be9000 1  1  0  0 
+561f9000 14be9000 cb6b5000 1  1  1  0 
+561f9000 14be9000 cb6b5000 ad08a000 1  1  1  1 
+29fbb000 14be9000 cb6b5000 ad08a000 1  0  0  0 
+29fbb000 7464a000 cb6b5000 ad08a000 1  1  0  0 
+29fbb000 7464a000 cb6b5000 ad08a000 1  1  0  0 
+29fbb000 7464a000 7be1b000 ad08a000 1  1  1  0 
+29fbb000 7464a000 7be1b000 cb6b5000 1  1  1  1 
+29fbb000 7464a000 7be1b000 cb6b5000 1  1  1  1 
+29fbb000 7464a000 7be1b000 cb6b5000 1  1  1  1 
+ad08a000 7464a000 7be1b000 cb6b5000 1  0  0  0 
+ad08a000 7464a000 7be1b000 cb6b5000 1  0  1  0 
+ad08a000 e1ad6000 7be1b000 cb6b5000 1  1  1  0 
+ad08a000 e1ad6000 7be1b000 71919000 1  1  0  1 
+ad08a000 e1ad6000 7be1b000 71919000 1  1  0  1 
+ad08a000 e1ad6000 14be9000 71919000 0  0  1  1 
+ad08a000 e1ad6000 14be9000 71919000 0  1  1  1 
+ad08a000 e1ad6000 14be9000 71919000 0  1  1  1 
+a0fcf000 e1ad6000 14be9000 71919000 1  1  1  0 
