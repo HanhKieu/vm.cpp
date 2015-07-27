@@ -160,13 +160,13 @@ int main(){
 
 			}
 			
-			for(j=0;j<4;j++)
-				std::cout << " " << use[j] << " ";
+			// for(j=0;j<4;j++)
+			// 	std::cout << " " << use[j] << " ";
 			
 			
 			
-			/*^^^^^^^^^^^^print out result^^^^^^^^^^^*/
-			//std::cout << " Was trying to add: " << vm_page << " current pointing: " << pointing;
+			// /*^^^^^^^^^^^^print out result^^^^^^^^^^^*/
+			// //std::cout << " Was trying to add: " << vm_page << " current pointing: " << pointing;
 			std::cout << std::endl;
 		}
 
