@@ -3,7 +3,7 @@
 #include <bitset>
 #include <fstream>
 
-int main(){
+int main(int argc, char *argv[]){
 	int i,j;
 	/*Initialize virtual memory*/
 	unsigned int ram[4];//physical page 
@@ -17,7 +17,9 @@ int main(){
 	/*page write and read*/
 
 	std::ifstream fs;
-	fs.open("test20.txt");
+	fs.open(argv[1]);
+	std::ofstream of;
+	of.open("vm-out.txt");
 	unsigned int info, vm_page;
 	//unsigned int offset;
 	int counter = 1;
@@ -39,7 +41,7 @@ int main(){
 		{
 			ram[0] = vm_page;
 			use[0] = 1;
-			std::cout << std::hex << ram[0] << "000" << std::endl;
+			of << std::hex << ram[0] << "000" << std::endl;
 		}
 
 		if(counter > 17) //counter > 16
@@ -137,23 +139,23 @@ int main(){
 					if(counter == 18)
 					{
 						if(j != 1)
-							std::cout << std::hex << ram[j] << "000 ";
+							of << std::hex << ram[j] << "000 ";
 						else
-							std::cout << std::hex << ram[j] << "000";
+							of << std::hex << ram[j] << "000";
 					}
 					else if(counter == 19)
 					{
 						if(j != 2)
-							std::cout << std::hex << ram[j] << "000 ";
+							of << std::hex << ram[j] << "000 ";
 						else
-							std::cout << std::hex << ram[j] << "000";
+							of << std::hex << ram[j] << "000";
 					}
 					else
 					{
 						if(j != 3)
-							std::cout << std::hex << ram[j] << "000 ";
+							of << std::hex << ram[j] << "000 ";
 						else
-							std::cout << std::hex << ram[j] << "000";
+							of << std::hex << ram[j] << "000";
 					}
 				}
 
@@ -167,13 +169,14 @@ int main(){
 			
 			// /*^^^^^^^^^^^^print out result^^^^^^^^^^^*/
 			// //std::cout << " Was trying to add: " << vm_page << " current pointing: " << pointing;
-			std::cout << std::endl;
+			of << std::endl;
 		}
 
 		counter++;
 	}
 
 	fs.close();
+	of.close();
 
 	return 0;
 }
